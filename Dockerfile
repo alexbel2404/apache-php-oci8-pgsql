@@ -1,7 +1,7 @@
 FROM romeoz/docker-apache-php:7.3
 
 RUN apt-get update && \
-    apt-get install php7.3-dev unzip libaio1 -y && \
+    apt-get install php7.3-dev php7.3-ldap unzip libaio1 -y && \
     rm -rf /var/lib/apt/lists/*
 
 # Oracle instantclient
